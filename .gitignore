@@ -1,0 +1,9 @@
+\.env
+node_modules
+dist
+\.jshintrc
+TEST_README.md
+TESTING_GUIDE.md
+coverage
+.cursorindexingignore
+\postman

@@ -1,0 +1,38 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "setup-db": "node scripts/setup-db.js",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "test:watch": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watch",
+    "test:coverage": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage",
+    "test:bookings": "node --experimental-vm-modules node_modules/jest/bin/jest.js tests/bookings.test.js",
+    "test:availability": "node --experimental-vm-modules node_modules/jest/bin/jest.js tests/availability.test.js",
+    "test:eventType": "node --experimental-vm-modules node_modules/jest/bin/jest.js tests/eventType.test.js",
+    "test:api": "node --experimental-vm-modules node_modules/jest/bin/jest.js tests/api",
+    "test:api:eventType": "node --experimental-vm-modules node_modules/jest/bin/jest.js tests/api/eventType.api.test.js",
+    "test:api:availability": "node --experimental-vm-modules node_modules/jest/bin/jest.js tests/api/availability.api.test.js",
+    "test:api:bookings": "node --experimental-vm-modules node_modules/jest/bin/jest.js tests/api/bookings.api.test.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "nodemon": "^3.1.11",
+    "pg": "^8.16.3",
+    "zod": "^4.3.5"
+  },
+  "devDependencies": {
+    "@jest/globals": "^29.7.0",
+    "jest": "^29.7.0",
+    "supertest": "^7.2.2"
+  }
+}
