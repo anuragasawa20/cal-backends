@@ -5,7 +5,14 @@ import cors from 'cors';
 const app = express();
 
 // CORS configuration - must be before other middleware
-const allowedOrigins = ['http://localhost:3000', 'http://127.0.0.1:3000', 'http://localhost:3000/', 'http://127.0.0.1:3000/'];
+const allowedOrigins = [
+    'http://localhost:3000',
+    'http://127.0.0.1:3000',
+    'http://localhost:3000/',
+    'http://127.0.0.1:3000/',
+    'https://cal-frontend-five.vercel.app',
+    'https://cal-frontend-five.vercel.app/'
+];
 
 const corsOptions = {
     origin: function (origin, callback) {
