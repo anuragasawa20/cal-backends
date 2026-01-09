@@ -498,7 +498,7 @@ backend/
 
 ## 🔗 Related Repositories
 
-- **Frontend**: [Frontend Repository URL]
+- **Frontend**: https://github.com/anuragasawa20/cal-clone-frontends
 - **Live Frontend**: [https://cal-frontend-five.vercel.app/](https://cal-frontend-five.vercel.app/)
 
 ## 📚 Additional Resources
